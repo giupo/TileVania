@@ -49,6 +49,6 @@ public class PlayerController : MonoBehaviour {
   }
 
   bool is_moving() {
-    return body.velocity.magnitude > Mathf.Epsilon;
+    return body.velocity.magnitude > 0f;
   }
 }
