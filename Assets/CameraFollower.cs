@@ -10,8 +10,7 @@ public class CameraFollower : MonoBehaviour {
     void FixedUpdate() {   
         Vector3 desiredPosition = player.position + offset;
         desiredPosition.z = transform.position.z;
-        Vector3 smoothPosition = Vector3.Lerp(transform.position, desiredPosition, smooth_velocity);
-        Debug.Log(smoothPosition);
+        Vector3 smoothPosition = Vector3.Lerp(transform.position, desiredPosition, smooth_velocity);        
         transform.position = smoothPosition;
     }
 }
